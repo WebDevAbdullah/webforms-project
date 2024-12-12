@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="Project1.Main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Incomes & Expense Tracker</title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="CSS/Style.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="col-md-3 col-lg-2 d-md-block bg-primary text-white sidebar">
+                    <h4 class="text-center mt-3">Menu</h4>
+                    <ul class="nav flex-column mt-4">
+                        <li class="nav-item">
+                            <a class="nav-link" href="Home.aspx">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Expenses.aspx">Expenses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Incomes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Statistics.aspx">Statistics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Goals.aspx">Goals</a>
+                        </li>
+                        <li class="nav-item" ">
+                            <a class="nav-link" href="Contact.aspx">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="About.aspx">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Settings.aspx">Settings</a>
+                        </li>
+                    </ul>
+                </nav>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
