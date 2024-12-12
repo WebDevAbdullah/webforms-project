@@ -1,0 +1,46 @@
+﻿* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+.sidebar {
+    height: 100vh;
+    position: fixed;
+    overflow-y: auto;
+    background-color: #007bff; /* Custom blue color */
+    color: white;
+}
+
+    .sidebar .nav-link {
+        color: white; /* Set nav link color to white */
+    }
+
+    .sidebar .nav-item.active,
+    .sidebar .nav-item:hover .nav-link {
+        background-color: #0056b3; /* darker color */
+        color: white;
+    }
+
+
+.card-title {
+    font-size: 1.5rem;
+}
+
+#total-amount {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.section {
+    padding-top: 20px;
+}
+
+.progress {
+    height: 30px;
+    width: 180px;
+}
